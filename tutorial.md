@@ -25,5 +25,15 @@
      - Item.query.all()  //valida o que foi criado
      - for item in Item.query.filter(price=500)  //filtra basedo em parametros colocados
             item.name
+     - db.drop_all()   //exlui toda a db
+     - db.session.rollback()  //refaz o ultimo add/commit
      
+# FORMULARIOS
+
+   * pip install flask-wtf
+   * pip install wtforms
+   * generate secret keys 
+      - python >> import os >> os.urandom(12).hex()  //coloca no ficheiro init.py para garantir a segurança dos envios dos formularios pelo usuario
+
+
 
