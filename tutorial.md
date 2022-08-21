@@ -35,5 +35,9 @@
    * generate secret keys 
       - python >> import os >> os.urandom(12).hex()  //coloca no ficheiro init.py para garantir a segurança dos envios dos formularios pelo usuario
 
+#RECOMENDADOS
 
+
+   * pip instal flask_bcrypt //encriptar passwords
+   * pip install flask_login  //faz validações para login
 
